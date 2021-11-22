@@ -1,0 +1,44 @@
+main .boardTitle div{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .boardTitle h2{
+    color: white;
+    position: fixed;
+
+}
+main .boardTitle div div{
+    position: fixed;
+    right: 10px;
+}
+main .boardTitle div div h3{
+    color: white;
+    margin: auto;
+    margin-right: 10px;
+}
+
+main .boardTitle div div select{  
+    width: 150px;
+    height: 40px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+main .tables{
+    display: flex;
+    margin-top: 60px;
+}
+
+main .tables .CheckListTables{
+    display: flex;
+}
+
+main .tables .addChicklist{
+    height: 47px;
+    margin: 0px;
+    font-size: 16px;
+    min-width: 20vw;
+    width: 20VW;
+}
