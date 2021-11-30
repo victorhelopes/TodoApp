@@ -5,40 +5,114 @@ main .boardTitle div{
 
 main .boardTitle h2{
     color: white;
-    position: fixed;
 
 }
-main .boardTitle div div{
-    position: fixed;
-    right: 10px;
-}
+
 main .boardTitle div div h3{
     color: white;
     margin: auto;
     margin-right: 10px;
 }
 
-main .boardTitle div div select{  
+main .boardTitle div div input{
+    margin: auto 15px;
     width: 150px;
     height: 40px;
-    margin: 20px 0px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+}
+
+main .boardTitle div div select{  
+    margin:auto;
+    width: 150px;
+    height: 40px;
     border-radius: 20px;
     border: none;
 }
 
-main .tables{
+main .checklist{
     display: flex;
-    margin-top: 60px;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 20vw;
+    min-width: 260px;
+    max-height: 80vh;
+    padding: 0 10px 10px 10px;
+    border-radius: 20px;
+    background-color: gray;
 }
 
-main .tables .CheckListTables{
-    display: flex;
+main .checklist .taskList{
+    padding-right: 2px;
+    overflow-y: auto;
 }
 
-main .tables .addChicklist{
+main .checklist .addTask{
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
     height: 47px;
-    margin: 0px;
+    min-height: 47px;
+    border-radius: 20px;
     font-size: 16px;
-    min-width: 20vw;
-    width: 20VW;
 }
+
+main .checklist .addTask input{
+    border-style: none;
+    border-radius: 20px;
+}
+
+main .checklist .addChecklist button{
+    margin-top: 0px
+    
+}
+
+@media screen and (max-width: 600px) {
+    main .boardTitle div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main .boardTitle div div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main .boardTitle div div input{
+        margin: 0px 15px 0px 0px;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: black;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main .boardTitle div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main .boardTitle div div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main .boardTitle div div input{
+        margin: 0px 15px 0px 0px;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: black;
+    }
+}
+
+
+
